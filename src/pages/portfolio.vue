@@ -79,7 +79,7 @@
         <div class="grid md:grid-cols-2 gap-16 items-start">
           <div class="space-y-6">
             <p class="text-zinc-300 leading-relaxed text-lg">
-              Salut, moi c'est <span class="text-white font-semibold">Abdou Isaac</span> 
+              Salut, moi c'est <span class="text-white font-semibold">Abdou Isaac</span>
             </p>
             <p class="text-zinc-400 leading-relaxed">
               Je suis actuellement étudiant en <span class="text-white font-semibold">BTS SIO</span> dans l'option <span class="text-white font-semibold">SLAM</span> (Solutions Logicielles et Applications Métier).
@@ -93,13 +93,13 @@
             </a>
           </div>
           <div class="border border-zinc-800 rounded-lg p-8 bg-zinc-950">
-            <h3 class="text-xl font-semibold mb-6 text-white">Qu'est-ce que le BTS SIO ? </h3>
+            <h3 class="text-xl font-semibold mb-6 text-white">Qu'est-ce que le BTS SIO ?</h3>
             <p class="text-zinc-400 mb-6 text-sm leading-relaxed">
               Le BTS SIO forme en deux ans aux métiers de l'informatique avec deux spécialités :
             </p>
             <div class="space-y-4">
               <div class="border-l-2 border-white pl-4">
-                <h4 class="font-semibold text-white mb-1">Option SLAM  (ma filière)</h4>
+                <h4 class="font-semibold text-white mb-1">Option SLAM (ma filière)</h4>
                 <p class="text-sm text-zinc-500">Solutions Logicielles et Applications Métier</p>
               </div>
               <div class="border-l-2 border-zinc-700 pl-4">
@@ -119,12 +119,12 @@
         <h2 class="text-4xl md:text-5xl font-bold mb-16 text-white">Mon Parcours</h2>
 
         <div class="mb-16">
-          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Expériences Professionnelles </h3>
+          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Expériences Professionnelles</h3>
           <div class="space-y-6">
             <div class="border border-zinc-800 rounded-lg p-6 bg-black hover:border-zinc-600 transition-all duration-300">
               <div class="flex justify-between items-start mb-4 flex-wrap gap-4">
                 <div>
-                  <h4 class="text-lg font-semibold text-white">Stage 2ème année — Erasmus </h4>
+                  <h4 class="text-lg font-semibold text-white">Stage 2ème année — Erasmus</h4>
                   <p class="text-zinc-500 text-sm">MastxSoftware · Pays-Bas</p>
                 </div>
                 <span class="border border-zinc-700 px-3 py-1 rounded text-xs text-zinc-400">Jan. — Mars 2026</span>
@@ -141,7 +141,7 @@
                   <h4 class="text-lg font-semibold text-white">Stage 1ère année</h4>
                   <p class="text-zinc-500 text-sm">Epithec · Saint-Benoit</p>
                 </div>
-                <span class="border border-zinc-700 px-3 py-1 rounded text-xs text-zinc-400">Mai — Juil. 2024</span>
+                <span class="border border-zinc-700 px-3 py-1 rounded text-xs text-zinc-400">Mai — Juin. 2025</span>
               </div>
               <ul class="space-y-2 text-zinc-400 text-sm">
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Développement d'un site web avec Vue.js (front-end)</li>
@@ -191,7 +191,7 @@
         </div>
 
         <div>
-          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Compétences </h3>
+          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Compétences</h3>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             <div v-for="skill in skills" :key="skill.name"
               class="border border-zinc-800 rounded-lg p-5 bg-black hover:border-zinc-600 transition-all duration-300">
@@ -205,7 +205,7 @@
             </div>
           </div>
 
-          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Outils </h3>
+          <h3 class="text-xs font-semibold mb-8 text-zinc-500 uppercase tracking-widest">Outils</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <div v-for="tool in tools" :key="tool.name"
               class="border border-zinc-800 rounded-lg p-5 bg-black hover:border-zinc-600 transition-all duration-300 text-center">
@@ -250,7 +250,7 @@
       </div>
     </section>
 
-    <!-- Veille Section -->
+    <!-- Veille Technologique Section -->
     <section id="veille" class="py-24 px-4 border-t border-zinc-900 bg-zinc-950">
       <div class="max-w-6xl mx-auto">
         <p class="text-zinc-600 text-xs tracking-[0.4em] uppercase mb-4">04 — Veille</p>
@@ -282,7 +282,7 @@
           </a>
         </div>
 
-        <div class="mt-12 border border-zinc-800 rounded-lg p-8 bg-black">
+        <!--<div class="mt-12 border border-zinc-800 rounded-lg p-8 bg-black">
           <h3 class="text-xs font-semibold mb-6 text-zinc-500 uppercase tracking-widest">Mes Outils de Veille 🔍</h3>
           <div class="grid md:grid-cols-3 gap-4">
             <div class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
@@ -301,9 +301,73 @@
               <p class="text-xs text-zinc-500 mt-1">Tech & Hardware</p>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </section>
+
+    <!-- ===================== VEILLE JURIDIQUE ===================== -->
+    <section id="veille-juridique" class="py-24 px-4 border-t border-zinc-900">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-zinc-600 text-xs tracking-[0.4em] uppercase mb-4">05 — Veille Juridique</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Veille Juridique</h2>
+        <p class="text-zinc-500 mb-12 text-sm max-w-2xl">
+          Suivi des évolutions législatives et réglementaires liées au numérique, à la protection des données et au droit informatique.
+        </p>
+
+        <!-- Thématique centrale -->
+        <div class="border border-zinc-800 rounded-lg p-8 mb-12 bg-zinc-950 text-center">
+          <p class="text-zinc-600 text-xs tracking-widest uppercase mb-3">Thématique</p>
+          <h3 class="text-2xl font-bold text-white mb-2">Enjeux Juridiques de l'Ordinateur Quantique</h3>
+          <p class="text-zinc-500 text-sm">Cryptographie menacée, brevets stratégiques, souveraineté numérique : quelles réponses juridiques face à l'essor du quantique ?</p>
+        </div>
+
+        <!-- Catégories juridiques -->
+        <div class="grid md:grid-cols-3 gap-4 mb-12">
+          <div v-for="cat in legalCategories" :key="cat.label"
+            class="border border-zinc-800 rounded-lg p-5 bg-zinc-950 hover:border-zinc-600 transition-all duration-300 text-center">
+            <div class="text-3xl mb-3">{{ cat.icon }}</div>
+            <p class="text-white font-semibold text-sm mb-1">{{ cat.label }}</p>
+            <p class="text-zinc-500 text-xs">{{ cat.desc }}</p>
+          </div>
+        </div>
+
+        <!-- Articles juridiques -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a v-for="article in legalArticles" :key="article.title" :href="article.href" target="_blank"
+            class="border border-zinc-800 rounded-lg p-6 bg-zinc-950 hover:border-zinc-500 transition-all duration-300 block group">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-zinc-900 border border-zinc-700 px-3 py-1 rounded text-xs font-semibold text-zinc-300">
+                {{ article.emoji }} {{ article.source }}
+              </span>
+              <span class="text-xs text-zinc-600">{{ article.date }}</span>
+            </div>
+            <!-- Badge thématique -->
+            <span class="inline-block border border-zinc-700 px-2 py-0.5 rounded text-xs text-zinc-500 uppercase tracking-wide mb-3">
+              {{ article.tag }}
+            </span>
+            <h3 class="font-bold text-base mb-3 text-white group-hover:text-zinc-300 transition-colors leading-snug">
+              {{ article.title }}
+            </h3>
+            <p class="text-zinc-500 text-sm mb-4 leading-relaxed">{{ article.description }}</p>
+            <span class="text-zinc-400 text-xs uppercase tracking-widest group-hover:text-white transition-colors">Lire l'article →</span>
+          </a>
+        </div>
+
+        <!-- Outils de veille juridique -->
+        <!--  <<div class="mt-12 border border-zinc-800 rounded-lg p-8 bg-zinc-950">
+          <h3 class="text-xs font-semibold mb-6 text-zinc-500 uppercase tracking-widest">Mes Sources Juridiques 📚</h3>
+          <div class="grid md:grid-cols-4 gap-4">
+            <div v-for="source in legalSources" :key="source.name"
+              class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
+              <div class="text-2xl mb-2">{{ source.icon }}</div>
+              <p class="font-semibold text-white text-sm">{{ source.name }}</p>
+              <p class="text-xs text-zinc-500 mt-1">{{ source.desc }}</p>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </section>
+    <!-- ============================================================ -->
 
     <!-- Footer -->
     <footer class="py-8 px-4 border-t border-zinc-900">
@@ -327,6 +391,7 @@ const navItems = [
   { name: 'Parcours', id: 'parcours' },
   { name: 'Projets', id: 'projets' },
   { name: 'Veille', id: 'veille' },
+  { name: 'Veille Juridique', id: 'veille-juridique' },
 ];
 
 const menuItems = [
@@ -335,6 +400,7 @@ const menuItems = [
   { name: 'Parcours', icon: '🎓', id: 'parcours' },
   { name: 'Projets', icon: '🚀', id: 'projets' },
   { name: 'Veille', icon: '📔', id: 'veille' },
+  { name: 'Veille Juridique', icon: '⚖️', id: 'veille-juridique' },
 ];
 
 const scrollTo = (id) => {
@@ -366,10 +432,10 @@ const projects = [
 const skills = [
   { name: "HTML", icon: "🌐", level: 50 },
   { name: "CSS", icon: "🎨", level: 50 },
-  { name: "PHP", icon: "🐘", level: 50 },
-  { name: "Python", icon: "🐍", level: 50 },
+  { name: "PHP", icon: "🐘", level: 30 },
+  { name: "Python", icon: "🐍", level: 30 },
   { name: "SQL", icon: "🗄️", level: 50 },
-  { name: "Vue.js", icon: "💚", level: 40 }
+  { name: "Vue.js", icon: "💚", level: 20 }
 ];
 
 const tools = [
@@ -381,7 +447,7 @@ const tools = [
 const articles = [
   {
     source: "IBM",
-    emoji: "🖥️",
+    emoji: "",
     date: "12 nov. 2025",
     title: "IBM dévoile le processeur Quantum Nighthawk",
     description: "IBM présente son processeur quantique le plus avancé : 120 qubits avec 218 coupleurs de nouvelle génération. L'entreprise vise un avantage quantique vérifié d'ici fin 2026.",
@@ -389,7 +455,7 @@ const articles = [
   },
   {
     source: "Nobel",
-    emoji: "🏆",
+    emoji: "",
     date: "18 déc. 2025",
     title: "Nobel de Physique 2025 : « On n'est qu'au début »",
     description: "Michel Devoret, prix Nobel de physique 2025, compare l'état actuel de l'ordinateur quantique à l'ère des tubes à vide. Il reste très optimiste malgré les obstacles techniques.",
@@ -397,7 +463,7 @@ const articles = [
   },
   {
     source: "Cybersécurité",
-    emoji: "🔐",
+    emoji: "",
     date: "10 nov. 2025",
     title: "Quantique : la vraie menace pour la cryptographie",
     description: "Les algorithmes de Shor et Grover menacent concrètement la cryptographie actuelle. Un plan de migration vers des primitives post-quantiques (PQC) devient urgent.",
@@ -405,7 +471,7 @@ const articles = [
   },
   {
     source: "Recherche",
-    emoji: "🧪",
+    emoji: "",
     date: "nov. 2025",
     title: "Première preuve mathématique de la supériorité quantique",
     description: "Des chercheurs apportent pour la première fois la preuve mathématique que les ordinateurs quantiques peuvent résoudre certaines tâches bien plus vite que tout ordinateur classique.",
@@ -420,6 +486,71 @@ const articles = [
     href: "https://www.ecinews.fr/fr/pasqal-vise-un-ordinateur-quantique-de-10-000-qbits-en-2026/"
   }
 ];
+
+// ─── Veille Juridique ───────────────────────────────────────────────────────
+
+/**const legalCategories = [
+  { icon: "🔐", label: "Cryptographie & Sécurité", desc: "Menace quantique sur les systèmes chiffrés actuels" },
+  { icon: "📜", label: "Brevets Quantiques", desc: "Course aux brevets entre États et entreprises" },
+  { icon: "🌍", label: "Souveraineté & Export", desc: "Réglementation internationale des technologies quantiques" },
+];**/
+
+const legalArticles = [
+  {
+    source: "ANSSI",
+    emoji: "",
+    date: "7–8 oct. 2025",
+    tag: "Cryptographie",
+    title: "L'ANSSI fixe son agenda : plus de produits sans PQC acceptés dès 2027",
+    description: "L'ANSSI publie sa FAQ sur la cryptographie post-quantique et délivre ses deux premières certifications PQC (Thales & Samsung). Dès 2027, aucun produit sans algorithme post-quantique ne sera accepté en qualification. Objectif migration totale : 2030–2035.",
+    href: "https://cyber.gouv.fr/cryptographie-post-quantique-faq"
+  },
+  {
+    source: "Silicon.fr",
+    emoji: "",
+    date: "22 oct. 2025",
+    tag: "Réglementation",
+    title: "Transition post-quantique : l'agenda de l'ANSSI se remplit",
+    description: "Analyse détaillée de la feuille de route française et européenne vers la PQC. L'ANSSI codirige avec l'Allemagne et les Pays-Bas le groupe de travail UE, avec pour objectif un niveau minimal de préparation dans tous les États membres d'ici fin 2026.",
+    href: "https://www.silicon.fr/cybersecurite-1371/anssi-agenda-post-quantique-224010"
+  },
+  {
+    source: "Commission UE",
+    emoji: "",
+    date: "29 oct. 2025",
+    tag: "Quantum Act",
+    title: "L'UE lance une consultation pour préparer sa future loi quantique",
+    description: "La Commission européenne ouvre une consultation publique pour façonner le futur Quantum Act, dont l'adoption est prévue au 2e trimestre 2026. La loi vise à sécuriser les chaînes d'approvisionnement et encadrer les exportations de technologies quantiques.",
+    href: "https://digital-strategy.ec.europa.eu/fr/news/commission-invites-contributions-shape-future-eu-quantum-act"
+  },
+  {
+    source: "Portail IE",
+    emoji: "",
+    date: "févr. 2026",
+    tag: "RGPD & PQC",
+    title: "CNIL & ANSSI : nouveaux acteurs de la régulation post-quantique",
+    description: "Face au risque « store now, decrypt later », l'obligation de sécurité du RGPD (art. 32) impose désormais d'anticiper la menace quantique. La CNIL recommande une hybridation du chiffrement immédiate, vers une PQC seule à partir de 2030.",
+    href: "https://www.portail-ie.fr/univers/droit-et-intelligence-juridique/2026/normes-conformite-et-post-quantique-le-droit-a-lepreuve-des-ruptures-technologiques-3-3-la-cnil-lanssi-comme-nouveaux-acteurs-de-la-regulation-post-quantique/"
+  },
+  {
+    source: "Conseil UE",
+    emoji: "",
+    date: "19 jan. 2026",
+    tag: "Législation",
+    title: "Le règlement EuroHPC est modifié : un pilier quantique désormais inscrit dans la loi",
+    description: "Le Conseil de l'UE adopte officiellement le règlement (UE) 2026/150 qui étend le mandat d'EuroHPC aux technologies quantiques. Pour la première fois, le quantique dispose d'une base juridique contraignante au niveau européen.",
+    href: "https://www.consilium.europa.eu/fr/press/press-releases/2026/01/16/artificial-intelligence-council-paves-the-way-for-the-creation-of-ai-gigafactories/"
+  },
+];
+
+/**const legalSources = [
+  { icon: "🔒", name: "ANSSI", desc: "Cybersécurité & cryptographie" },
+  { icon: "🇺🇸", name: "NIST", desc: "Standards post-quantiques" },
+  { icon: "🇪🇺", name: "EUR-Lex", desc: "Droit européen" },
+  { icon: "📜", name: "OMPI", desc: "Brevets & propriété intellectuelle" },
+];**/
+
+// ────────────────────────────────────────────────────────────────────────────
 
 const handleScroll = () => { scrolled.value = window.scrollY > 50; };
 onMounted(() => window.addEventListener('scroll', handleScroll));
