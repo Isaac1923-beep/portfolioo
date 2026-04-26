@@ -87,7 +87,7 @@
             <p class="text-zinc-400 leading-relaxed">
               Passionné par le développement et les nouvelles technologies, découvrez ici mes projets et compétences.
             </p>
-            <a href="/cv.pdf"
+            <a href="/portfolioo/cv.pdf"
               class="inline-block border border-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 mt-4">
               Télécharger mon CV
             </a>
@@ -133,6 +133,10 @@
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Mises à jour de bases de données clients en SQL</li>
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Mise à jour de solutions SaaS</li>
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Introduction au C++</li>
+                <a href="/portfolioo/rapport2.pdf"
+              class="inline-block border border-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 mt-4">
+              Rapport
+            </a>
               </ul>
             </div>
             <div class="border border-zinc-800 rounded-lg p-6 bg-black hover:border-zinc-600 transition-all duration-300">
@@ -146,6 +150,10 @@
               <ul class="space-y-2 text-zinc-400 text-sm">
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Développement d'un site web avec Vue.js (front-end)</li>
                 <li class="flex items-start gap-2"><span class="text-white mt-0.5">—</span> Développement du back-end avec Laravel</li>
+                <a href="/portfolioo/rapport1.pdf"
+              class="inline-block border border-white px-6 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 mt-4">
+              Rapport
+            </a>
               </ul>
             </div>
           </div>
@@ -274,7 +282,7 @@
               </span>
               <span class="text-xs text-zinc-600">{{ article.date }}</span>
             </div>
-            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide">Nouveau</span>
+            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide"></span>
             <h3 class="font-bold text-base mb-3 text-white group-hover:text-zinc-300 transition-colors leading-snug">
               {{ article.title }}
             </h3>
@@ -349,7 +357,7 @@
               </span>
               <span class="text-xs text-zinc-600">{{ article.date }}</span>
             </div>
-            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide">Nouveau</span>
+            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide"></span>
             <!-- Badge thématique -->
             <span class="inline-block border border-zinc-700 px-2 py-0.5 rounded text-xs text-zinc-500 uppercase tracking-wide mb-3 ml-2">
               {{ article.tag }}
@@ -435,7 +443,7 @@ const scrollTo = (id) => {
 const projects = [
   {
     title: "Maison de ligue",
-    category: "Application Web",
+    category: "Site Web",
     tech: "PHP· Postgres",
     image: "https://images.unsplash.com/photo-1551958219-acbc720bf6ed?w=500&h=300&fit=crop",
     description: "Plateforme de gestion de Match de Sport",
@@ -444,16 +452,16 @@ const projects = [
   },
   {
     title: "Blogue app",
-    category: "Application Java",
+    category: "Site Web",
     tech: "PHP· Postgres",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     description: "Application de gestion avec base de données",
-    href: '#accueil',
+    href: '/portfolioo/blogue.pdf',
     buttonText: "Voir le projet →"
   },
   {
     title: "Maison Pain d'epice",
-    category: "Application Java",
+    category: "BDD SQL",
     tech: "MySQL",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     description: "Application de gestion avec base de données",
@@ -462,11 +470,11 @@ const projects = [
   },
   {
     title: "Création d'entreprise",
-    category: "Application Java",
+    category: "Site html",
     tech: "HTML,CSS",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     description: "Application de gestion avec base de données",
-    href: '#accueil',
+    href: '/portfolioo/mbo.pdf',
     buttonText: "Voir le projet →"
   }
 ];
