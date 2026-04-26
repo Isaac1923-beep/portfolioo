@@ -250,7 +250,7 @@
       </div>
     </section>
 
-    <!-- Veille Technologique Section -->
+    <!-- ===================== VEILLE TECHNOLOGIQUE ===================== -->
     <section id="veille" class="py-24 px-4 border-t border-zinc-900 bg-zinc-950">
       <div class="max-w-6xl mx-auto">
         <p class="text-zinc-600 text-xs tracking-[0.4em] uppercase mb-4">04 — Veille</p>
@@ -265,7 +265,7 @@
           <p class="text-zinc-500 text-sm">Comment l'ordinateur quantique transforme-t-il notre quotidien et quel est son futur ?</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <a v-for="article in articles" :key="article.title" :href="article.href" target="_blank"
             class="border border-zinc-800 rounded-lg p-6 bg-black hover:border-zinc-500 transition-all duration-300 block group">
             <div class="flex items-center gap-3 mb-4">
@@ -274,6 +274,7 @@
               </span>
               <span class="text-xs text-zinc-600">{{ article.date }}</span>
             </div>
+            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide">Nouveau</span>
             <h3 class="font-bold text-base mb-3 text-white group-hover:text-zinc-300 transition-colors leading-snug">
               {{ article.title }}
             </h3>
@@ -282,26 +283,33 @@
           </a>
         </div>
 
-        <!--<div class="mt-12 border border-zinc-800 rounded-lg p-8 bg-black">
-          <h3 class="text-xs font-semibold mb-6 text-zinc-500 uppercase tracking-widest">Mes Outils de Veille 🔍</h3>
-          <div class="grid md:grid-cols-3 gap-4">
-            <div class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
-              <div class="text-2xl mb-2">📰</div>
-              <p class="font-semibold text-white text-sm">Feedly</p>
-              <p class="text-xs text-zinc-500 mt-1">Agrégateur RSS</p>
-            </div>
-            <div class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
-              <div class="text-2xl mb-2">🤖</div>
-              <p class="font-semibold text-white text-sm">OpenAI</p>
-              <p class="text-xs text-zinc-500 mt-1">Actualités IA</p>
-            </div>
-            <div class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
-              <div class="text-2xl mb-2">💻</div>
-              <p class="font-semibold text-white text-sm">Hardware.fr</p>
-              <p class="text-xs text-zinc-500 mt-1">Tech & Hardware</p>
+        <!-- Synthèse Technologique -->
+        <div class="border border-zinc-700 rounded-lg p-8 bg-black">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">🔬</span>
+            <div>
+              <p class="text-zinc-500 text-xs tracking-widest uppercase">Synthèse</p>
+              <h3 class="text-xl font-bold text-white">L'état du quantique en 2026</h3>
             </div>
           </div>
-        </div>-->
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="border border-zinc-800 rounded p-4 bg-zinc-950">
+              <p class="text-white font-semibold text-sm mb-2">⚙️ Consolidation technique</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">2026 marque le passage du laboratoire à l'ingénierie industrielle. Les acteurs (IBM, Google, Pasqal, CEA) ne courent plus seulement après le nombre de qubits, mais optimisent temps de cohérence et taux d'erreur pour atteindre la tolérance aux fautes.</p>
+            </div>
+            <div class="border border-zinc-800 rounded p-4 bg-zinc-950">
+              <p class="text-white font-semibold text-sm mb-2">🌍 Course géopolitique</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">La Chine intègre l'IA dans son ordinateur quantique "Origin Wukong", Google adopte les atomes neutres et investit dans Pasqal. La France répond avec Lucy (CEA) et mise sur une filière européenne souveraine face aux États-Unis et à la Chine qui captent 90 % des investissements privés.</p>
+            </div>
+            <div class="border border-zinc-800 rounded p-4 bg-zinc-950">
+              <p class="text-white font-semibold text-sm mb-2">🔓 Menace cryptographique</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">Google révèle qu'il faudrait désormais moins de 500 000 qubits physiques pour casser le chiffrement ECDSA 256 bits — soit 20 fois moins que les estimations précédentes. Cette annonce accélère l'urgence de la migration vers la cryptographie post-quantique.</p>
+            </div>
+          </div>
+          <p class="text-zinc-600 text-xs border-t border-zinc-800 pt-4">
+            Synthèse réalisée à partir des actualités suivies — Avril 2026
+          </p>
+        </div>
       </div>
     </section>
 
@@ -332,7 +340,7 @@
         </div>
 
         <!-- Articles juridiques -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <a v-for="article in legalArticles" :key="article.title" :href="article.href" target="_blank"
             class="border border-zinc-800 rounded-lg p-6 bg-zinc-950 hover:border-zinc-500 transition-all duration-300 block group">
             <div class="flex items-center gap-3 mb-4">
@@ -341,8 +349,9 @@
               </span>
               <span class="text-xs text-zinc-600">{{ article.date }}</span>
             </div>
+            <span v-if="article.new" class="inline-block bg-white text-black text-xs font-bold px-2 py-0.5 rounded mb-3 uppercase tracking-wide">Nouveau</span>
             <!-- Badge thématique -->
-            <span class="inline-block border border-zinc-700 px-2 py-0.5 rounded text-xs text-zinc-500 uppercase tracking-wide mb-3">
+            <span class="inline-block border border-zinc-700 px-2 py-0.5 rounded text-xs text-zinc-500 uppercase tracking-wide mb-3 ml-2">
               {{ article.tag }}
             </span>
             <h3 class="font-bold text-base mb-3 text-white group-hover:text-zinc-300 transition-colors leading-snug">
@@ -353,18 +362,33 @@
           </a>
         </div>
 
-        <!-- Outils de veille juridique -->
-        <!--  <<div class="mt-12 border border-zinc-800 rounded-lg p-8 bg-zinc-950">
-          <h3 class="text-xs font-semibold mb-6 text-zinc-500 uppercase tracking-widest">Mes Sources Juridiques 📚</h3>
-          <div class="grid md:grid-cols-4 gap-4">
-            <div v-for="source in legalSources" :key="source.name"
-              class="border border-zinc-800 rounded p-4 text-center hover:border-zinc-600 transition-colors">
-              <div class="text-2xl mb-2">{{ source.icon }}</div>
-              <p class="font-semibold text-white text-sm">{{ source.name }}</p>
-              <p class="text-xs text-zinc-500 mt-1">{{ source.desc }}</p>
+        <!-- Synthèse Juridique -->
+        <div class="border border-zinc-700 rounded-lg p-8 bg-zinc-950">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">⚖️</span>
+            <div>
+              <p class="text-zinc-500 text-xs tracking-widest uppercase">Synthèse</p>
+              <h3 class="text-xl font-bold text-white">Le droit face au quantique en 2026</h3>
             </div>
           </div>
-        </div>-->
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="border border-zinc-800 rounded p-4 bg-black">
+              <p class="text-white font-semibold text-sm mb-2">📅 Des échéances concrètes</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">Fin 2026 : chaque État membre de l'UE doit avoir sa feuille de route PQC nationale et lancé ses premières migrations. L'ANSSI n'acceptera plus aucun produit sans cryptographie post-quantique en qualification dès 2027. La migration complète des infrastructures critiques est fixée à 2030-2035.</p>
+            </div>
+            <div class="border border-zinc-800 rounded p-4 bg-black">
+              <p class="text-white font-semibold text-sm mb-2">🇪🇺 Une Europe qui légifère</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">Le règlement EuroHPC 2026/150 inscrit pour la première fois le quantique dans la loi européenne. Le futur Quantum Act (consultation lancée fin 2025, adoption prévue T2 2026) viendra encadrer les exportations et sécuriser les chaînes d'approvisionnement. L'UE mise sur la régulation là où elle peine sur les investissements.</p>
+            </div>
+            <div class="border border-zinc-800 rounded p-4 bg-black">
+              <p class="text-white font-semibold text-sm mb-2">🔐 RGPD & obligation PQC</p>
+              <p class="text-zinc-500 text-xs leading-relaxed">L'article 32 du RGPD impose désormais d'anticiper la menace "store now, decrypt later". La CNIL recommande une hybridation immédiate du chiffrement, avec bascule vers la PQC seule à partir de 2030. L'algorithme HQC, développé par des chercheurs français, a été retenu par le NIST pour standardisation — une victoire stratégique pour la souveraineté numérique européenne.</p>
+            </div>
+          </div>
+          <p class="text-zinc-600 text-xs border-t border-zinc-800 pt-4">
+            Synthèse réalisée à partir des actualités suivies — Avril 2026
+          </p>
+        </div>
       </div>
     </section>
     <!-- ============================================================ -->
@@ -412,7 +436,7 @@ const projects = [
   {
     title: "Maison de ligue",
     category: "Application Web",
-    tech: "Vue.js · Tailwind",
+    tech: "PHP· Postgres",
     image: "https://images.unsplash.com/photo-1551958219-acbc720bf6ed?w=500&h=300&fit=crop",
     description: "Plateforme de gestion de Match de Sport",
     href: '#accueil',
@@ -421,7 +445,25 @@ const projects = [
   {
     title: "Blogue app",
     category: "Application Java",
-    tech: "Java · MySQL",
+    tech: "PHP· Postgres",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
+    description: "Application de gestion avec base de données",
+    href: '#accueil',
+    buttonText: "Voir le projet →"
+  },
+  {
+    title: "Maison Pain d'epice",
+    category: "Application Java",
+    tech: "MySQL",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
+    description: "Application de gestion avec base de données",
+    href: '#accueil',
+    buttonText: "Voir le projet →"
+  },
+  {
+    title: "Création d'entreprise",
+    category: "Application Java",
+    tech: "HTML,CSS",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     description: "Application de gestion avec base de données",
     href: '#accueil',
@@ -444,7 +486,10 @@ const tools = [
   { name: "Figma", icon: "🎭" }
 ];
 
+// ─── Veille Technologique ────────────────────────────────────────────────────
+
 const articles = [
+  // Articles originaux
   {
     source: "IBM",
     emoji: "",
@@ -484,18 +529,56 @@ const articles = [
     title: "LG investit dans Pasqal — 10 000 qubits en 2026",
     description: "LG Electronics prend une participation dans la start-up française Pasqal, qui vise une machine de 10 000 qubits d'ici été 2026. Une validation industrielle majeure pour le quantique français.",
     href: "https://www.ecinews.fr/fr/pasqal-vise-un-ordinateur-quantique-de-10-000-qbits-en-2026/"
-  }
+  },
+  // Nouveaux articles 2026
+  {
+    source: "CEA",
+    emoji: "🇫🇷",
+    date: "14 avr. 2026",
+    title: "Lucy : le CEA inaugure le plus puissant ordinateur quantique photonique au monde",
+    description: "Inauguré au Très Grand Centre de calcul du CEA à Bruyères-le-Châtel, Lucy ouvre une nouvelle phase d'expérimentation entre recherche et usages industriels, structurant ainsi la filière européenne du quantique photonique.",
+    href: "https://www.usinenouvelle.com/technos-et-innovations/recherche/cea/le-plus-puissant-ordinateur-quantique-photonique-au-monde-avec-lucy-le-cea-prepare-les-futures-applications-industrielles.HVCIMJ2XIRESXIK7QWK7CNMNAU.html",
+    new: true
+  },
+  {
+    source: "Google",
+    emoji: "",
+    date: "31 mars 2026",
+    title: "Google : casser le chiffrement ECDSA nécessite 20x moins de qubits qu'estimé",
+    description: "Un livre blanc de Google Quantum AI révèle que moins de 500 000 qubits physiques suffiraient pour briser le chiffrement ECDSA 256 bits. Cette réduction drastique des estimations précédentes secoue les marchés des cryptomonnaies et accélère l'urgence de la migration post-quantique.",
+    href: "https://tech-insider.org/fr/google-ordinateur-quantique-atomes-neutres-pasqal-2026/",
+    new: true
+  },
+  {
+    source: "Chine",
+    emoji: "🇨🇳",
+    date: "avr. 2026",
+    title: "Origin Wukong : l'IA s'invite dans l'ordinateur quantique chinois",
+    description: "Le laboratoire de l'Anhui annonce l'intégration de capacités d'IA dans l'ordinateur quantique supraconducteur \"Origin Wukong\", faisant passer la technologie du stade \"utilisable\" au stade \"convivial\". Une première mondiale qui ouvre la voie aux applications hybrides quantique-IA.",
+    href: "http://french.china.org.cn/china/txt/2026-04/21/content_118450750.htm",
+    new: true
+  },
+  {
+    source: "Futura",
+    emoji: "",
+    date: "16 jan. 2026",
+    title: "2026 : l'informatique quantique sort des laboratoires",
+    description: "Les experts s'accordent : 2026 est l'année de consolidation. Les entreprises ne misent plus uniquement sur le nombre de qubits mais sur des critères de qualité (cohérence, taux d'erreur, connectivité). Les premiers ordinateurs tolérants aux fautes avec qubits logiques commencent à émerger.",
+    href: "https://www.futura-sciences.com/tech/actualites/ordinateur-quantique-informatique-quantique-sort-laboratoire-ce-2026-va-reellement-apporter-129974/",
+    new: true
+  },
 ];
 
 // ─── Veille Juridique ───────────────────────────────────────────────────────
 
-/**const legalCategories = [
+const legalCategories = [
   { icon: "🔐", label: "Cryptographie & Sécurité", desc: "Menace quantique sur les systèmes chiffrés actuels" },
   { icon: "📜", label: "Brevets Quantiques", desc: "Course aux brevets entre États et entreprises" },
   { icon: "🌍", label: "Souveraineté & Export", desc: "Réglementation internationale des technologies quantiques" },
-];**/
+];
 
 const legalArticles = [
+  // Articles existants
   {
     source: "ANSSI",
     emoji: "",
@@ -541,14 +624,38 @@ const legalArticles = [
     description: "Le Conseil de l'UE adopte officiellement le règlement (UE) 2026/150 qui étend le mandat d'EuroHPC aux technologies quantiques. Pour la première fois, le quantique dispose d'une base juridique contraignante au niveau européen.",
     href: "https://www.consilium.europa.eu/fr/press/press-releases/2026/01/16/artificial-intelligence-council-paves-the-way-for-the-creation-of-ai-gigafactories/"
   },
+  // Nouveaux articles juridiques 2026
+  {
+    source: "UE / NIS2",
+    emoji: "",
+    date: "jan. 2026",
+    tag: "NIS2 & PQC",
+    title: "NIS2 révisée : la cryptographie post-quantique devient une obligation explicite",
+    description: "Les propositions de révision de janvier 2026 rationalisent les certifications, renforcent la surveillance des chaînes d'approvisionnement par l'ENISA et inscrivent pour la première fois des délais contraignants de migration PQC dans le texte de la directive. 28 700 entreprises européennes sont visées.",
+    href: "https://salienceconsulting.ae/fr/europes-digital-regulation-in-2026-from-expansion-to-agile-consolidation/",
+    new: true
+  },
+  {
+    source: "Revue Banque",
+    emoji: "",
+    date: "5 déc. 2025",
+    tag: "Analyse juridique",
+    title: "Cryptographie post-quantique : chimère ou réalité réglementaire ?",
+    description: "Analyse approfondie de la transition PQC sous l'angle du droit bancaire et financier. L'article examine les obligations issues du CRA (Cyber Resilience Act), les délais réglementaires et le « PQC Migration Handbook » du NIST comme référentiel d'évaluation des risques quantiques.",
+    href: "https://www.revue-banque.fr/espace-banque-droit/la-cryptographie-post-quantique-chimere-ou-realite-reglementaire-HM25296076",
+    new: true
+  },
+  {
+    source: "TheGreenBow",
+    emoji: "",
+    date: "3 févr. 2026",
+    tag: "Souveraineté",
+    title: "2026 : l'Europe face au choix de sa souveraineté quantique",
+    description: "L'UE prévoit la création de l'Académie européenne des compétences quantiques en 2026. L'algorithme HQC, développé par des chercheurs français, est retenu par le NIST pour standardisation — une avancée stratégique majeure pour la souveraineté cryptographique européenne.",
+    href: "https://www.thegreenbow.com/fr/societe/actualites/dependances-quantique-reglementations-2026-lannee-ou-leurope-doit-choisir-et-agir",
+    new: true
+  },
 ];
-
-/**const legalSources = [
-  { icon: "🔒", name: "ANSSI", desc: "Cybersécurité & cryptographie" },
-  { icon: "🇺🇸", name: "NIST", desc: "Standards post-quantiques" },
-  { icon: "🇪🇺", name: "EUR-Lex", desc: "Droit européen" },
-  { icon: "📜", name: "OMPI", desc: "Brevets & propriété intellectuelle" },
-];**/
 
 // ────────────────────────────────────────────────────────────────────────────
 
