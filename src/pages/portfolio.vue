@@ -447,7 +447,7 @@ const projects = [
     tech: "PHP· Postgres",
     image: "https://images.unsplash.com/photo-1551958219-acbc720bf6ed?w=500&h=300&fit=crop",
     description: "Plateforme de gestion de Match de Sport",
-    href: '#accueil',
+    href: '/portfolioo/ligue',
     buttonText: "Voir le projet →"
   },
   {
@@ -465,7 +465,7 @@ const projects = [
     tech: "MySQL",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop",
     description: "Application de gestion avec base de données",
-    href: '#accueil',
+    href: '/portfolioo/epice',
     buttonText: "Voir le projet →"
   },
   {
